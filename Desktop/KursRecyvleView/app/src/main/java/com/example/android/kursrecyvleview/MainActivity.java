@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView.setHasFixedSize(true);
 
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
 
         recyclerView.setItemAnimator(new DefaultItemAnimator());
 
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         for(int i =0; i<20; ++i)
             articles.add(new Article());
 
-        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
+        recyclerView.setAdapter(new MyAdapter(articles, recyclerView));
 
     }
 }
