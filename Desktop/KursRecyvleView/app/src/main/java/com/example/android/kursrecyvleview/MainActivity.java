@@ -31,5 +31,5 @@ public class MainActivity extends AppCompatActivity {
 
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
 
-    }assagit remote set-url origin git://new.url.here
+    }
 }
