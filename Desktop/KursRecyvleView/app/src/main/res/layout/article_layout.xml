@@ -1,36 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp"
-    card_view:cardBackgroundColor="#FEFEFE"
-    card_view:cardCornerRadius="5dp"
-    card_view:cardElevation="5dp">
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    card_view:cardBackgroundColor="#FFF"
+    card_view:cardCornerRadius="2dp"
+    card_view:cardElevation="2dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="5dp">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/article_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Title"
-            android:textColor="#333"
-            android:textSize="20sp" />
+            android:textColor="#DD000000"
+            android:paddingTop="24dp"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/article_subtitle"
+            android:id="@+id/article_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="Subtitle"
-            android:textColor="#888"
+            android:text="Content"
+            android:textColor="#8A000000"
+            android:paddingBottom="24dp"
+            android:paddingLeft="16dp"
+            android:lineSpacingExtra="8dp"
+            android:paddingRight="16dp"
             android:textSize="14sp" />
-
     </LinearLayout>
-
 </android.support.v7.widget.CardView>
